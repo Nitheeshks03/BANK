@@ -1,0 +1,19 @@
+<h1 class="text-center  p-2" style="font-size: 60px; text-shadow: 2px 2px 2px; color: rgb(233, 79, 79);">SIGN IN
+</h1>
+<hr>
+<form action="" class="w-50  p-3 container text-center"
+    style="border-radius: 10px; background-color: rgb(241, 141, 128);box-shadow: 0px 2px 50px ;margin-top: 120px; ">
+    <div class="p-2 m-2">
+        <input [(ngModel)]="uname"  type="text"  name="uname" id="u1" class="form-control" placeholder="enter Username">
+    </div>
+    <div class="p-2 m-2">
+        <input  type="password" name="passsword" id="p1" class="form-control" placeholder="enter Password">
+    </div>
+    <button (click)="login()" type="submit" class="btn btn-outline-info text-black">Login</button>
+
+
+    <p class="mt-3">
+        don't have an account?
+        <a routerLink="register" style="text-decoration: none;"> <strong>Create Account</strong></a>
+    </p>
+</form>
